@@ -5,6 +5,11 @@
 <title>AI-READY INJECTOR™ — lizibilitate AI la edge</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="AI-READY INJECTOR adaugă 156 de semnale AI verificabile oricărui site, la edge. Fără modificarea CMS-ului, fără reconstrucție. Auditat de 3webobs, corectat continuu.">
+<meta name="author" content="AIVENTURE S.R.L.">
+<meta name="publisher" content="AIVENTURE S.R.L.">
+<meta name="application-name" content="AI-READY INJECTOR">
+<meta name="theme-color" content="#11100e">
+<meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://aireadyinjector.com/ro/">
 <link rel="alternate" hreflang="en" href="https://aireadyinjector.com/">
 <link rel="alternate" hreflang="ro" href="https://aireadyinjector.com/ro/">
@@ -19,7 +24,16 @@
 <meta property="og:url" content="https://aireadyinjector.com/ro/">
 <meta property="og:title" content="AI-READY INJECTOR™ — lizibilitate AI la edge">
 <meta property="og:description" content="156 de semnale AI verificabile, injectate la edge. Fără reconstrucție. Auditat de 3webobs, corectat continuu.">
+<meta property="og:image" content="https://aireadyinjector.com/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI-READY INJECTOR — lizibilitate AI la edge">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI-READY INJECTOR™ — fără reconstrucție">
+<meta name="twitter:description" content="Fă site-ul existent mai ușor de identificat, înțeles și verificat de sistemele AI.">
+<meta name="twitter:image" content="https://aireadyinjector.com/assets/og-cover.png">
+<meta name="twitter:image:alt" content="AI-READY INJECTOR — lizibilitate AI la edge">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/json" href="../ai.json" title="AI Manifest">
 <link rel="alternate" type="application/json" href="../intents.json" title="Intent Matrix">
 <link rel="author" href="../llms.txt">
@@ -75,7 +89,27 @@ body:not(.lang-ro) [lang-ro]{display:none}
       "name": "AI-READY INJECTOR",
       "description": "Adds and maintains machine-readable signals at the edge, in front of an existing website, without changing its CMS.",
       "brand": { "@id": "https://aireadyinjector.com/#organization" },
-      "category": "AI Delivery Infrastructure"
+      "category": "AI Delivery Infrastructure",
+      "url": "https://aireadyinjector.com/ro/",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://aireadyinjector.com/ro/#pricing",
+        "price": "490.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": { "@id": "https://aireadyinjector.com/#organization" }
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aireadyinjector.com/#service",
+      "name": "Implementare și mentenanță AI-READY INJECTOR la edge",
+      "serviceType": "Infrastructură de lizibilitate AI livrată la edge",
+      "provider": { "@id": "https://aireadyinjector.com/#organization" },
+      "areaServed": { "@type": "Place", "name": "Uniunea Europeană" },
+      "audience": { "@type": "BusinessAudience", "audienceType": "Organizații care operează site-uri existente" },
+      "url": "https://aireadyinjector.com/ro/"
     },
     {
       "@type": "WebSite",
@@ -117,7 +151,12 @@ body:not(.lang-ro) [lang-ro]{display:none}
         { "@type": "Question", "name": "Who controls the DNS?", "acceptedAnswer": { "@type": "Answer", "text": "The customer does. The worker is deployed on the customer's own Cloudflare account under an intervention agreement, and access can be revoked at any time." } },
         { "@type": "Question", "name": "Will this get me cited by ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "It removes the reasons not to. AI systems pick the source that costs least to interpret and carries the most verifiable identity. Selection still belongs to them, and no one can guarantee it." } },
         { "@type": "Question", "name": "What does the score mean?", "acceptedAnswer": { "@type": "Answer", "text": "It is a technical health indicator. What matters commercially is non-branded appearances, AI citations with a link, qualified leads, conversions, agent requests, and time to fix." } },
-        { "@type": "Question", "name": "Does this make me EU AI Act compliant?", "acceptedAnswer": { "@type": "Answer", "text": "No. It supports readiness through traceability, transparency artefacts and a transaction log. Compliance is a legal assessment made by a qualified professional." } }
+        { "@type": "Question", "name": "Does this make me EU AI Act compliant?", "acceptedAnswer": { "@type": "Answer", "text": "No. It supports readiness through traceability, transparency artefacts and a transaction log. Compliance is a legal assessment made by a qualified professional." } },
+        { "@type": "Question", "name": "Why does ChatGPT Ads matter here?", "acceptedAnswer": { "@type": "Answer", "text": "Paid visibility and organic AI selection are separate. An advertisement can create exposure, while clear identity, service and evidence signals help AI systems interpret the destination website. Neither guarantees citation or recommendation." } },
+        { "@type": "Question", "name": "Which websites can use AI-READY INJECTOR?", "acceptedAnswer": { "@type": "Answer", "text": "Any public website whose traffic can pass through a supported edge layer can be assessed. Deployment still depends on DNS control, the current hosting architecture and explicit tenant authorization." } },
+        { "@type": "Question", "name": "How is an implementation verified?", "acceptedAnswer": { "@type": "Answer", "text": "3webobs performs an independent re-audit after deployment. The result records what was detected, what changed and which signals remain outside the injector's control." } },
+        { "@type": "Question", "name": "Can the injector be removed or rolled back?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The customer retains control of the DNS and Cloudflare account. Removing or rolling back the edge worker returns delivery to the previous configuration." } },
+        { "@type": "Question", "name": "Does the injector correct all 167 criteria audited by 3webobs?", "acceptedAnswer": { "@type": "Answer", "text": "No. 3webobs audits 167 observable criteria. The injector maintains a 156-signal technical registry; third-party authority, reviews, backlinks, rankings and AI recommendations are monitored but cannot be injected." } }
       ]
     }
   ]
@@ -173,7 +212,7 @@ body:not(.lang-ro) [lang-ro]{display:none}
 
       <h1 style="font-family:var(--serif); font-weight:400; margin:0; line-height:0.88; letter-spacing:-0.03em;">
         <span class="h1-line" style="font-size:92px; display:block;"><span lang-en>Ads show you.</span><span lang-ro>Reclama te arată.</span></span>
-        <span class="h1-line" style="font-size:92px; display:block; font-style:italic; color:var(--gold);"><span lang-en>Signals make you read.</span><span lang-ro>Semnalele te fac citit.</span></span>
+        <span class="h1-line" style="font-size:92px; display:block; font-style:italic; color:var(--gold);"><span lang-en>Signals make you readable.</span><span lang-ro>Semnalele te fac lizibil.</span></span>
       </h1>
 
       <p style="font-size:22px; line-height:1.4; margin:32px 0 0; max-width:580px; color:var(--text); font-weight:300;">
@@ -880,11 +919,28 @@ body:not(.lang-ro) [lang-ro]{display:none}
       <div class="q-body">
         <span class="mono" style="font-size:11px; color:var(--dim); letter-spacing:0.16em; text-transform:uppercase;">↳ A</span>
         <div>
-          <span lang-en>Ads reached 31 European markets on 24 August 2026, on the Free and Go tiers, placed contextually next to the answer. If a competitor is cited in that answer and you are only in the ad, you paid to lose. And a click from an ad lands on your site — which still has to be readable when the model checks it.</span>
-          <span lang-ro>Reclamele au ajuns în 31 de piețe europene pe 24 august 2026, pe planurile Free și Go, plasate contextual lângă răspuns. Dacă un concurent e citat în acel răspuns și tu ești doar în reclamă, ai plătit ca să pierzi. Iar un click din reclamă ajunge pe site-ul tău — care tot trebuie să fie lizibil când modelul îl verifică.</span>
+          <span lang-en>Paid visibility and organic AI selection are separate. An advertisement can create exposure, while clear identity, service and evidence signals help AI systems interpret the destination website. Neither guarantees citation or recommendation.</span>
+          <span lang-ro>Vizibilitatea plătită și selecția organică de către AI sunt separate. Reclama poate crea expunere, iar semnalele clare despre identitate, servicii și dovezi ajută sistemele AI să interpreteze site-ul destinație. Niciuna nu garantează citarea sau recomandarea.</span>
         </div>
         <span></span>
       </div>
+    </details>
+
+    <details class="faq">
+      <summary><span class="q-num">Q.07</span><h3 style="font-size:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0;display:inline;"><span lang-en>Which websites can use AI-READY INJECTOR?</span><span lang-ro>Ce site-uri pot utiliza AI-READY INJECTOR?</span></h3><span class="q-toggle">+</span></summary>
+      <div class="q-body"><span class="mono" style="font-size:11px;color:var(--dim);letter-spacing:0.16em;text-transform:uppercase;">↳ A</span><div><span lang-en>Any public website whose traffic can pass through a supported edge layer can be assessed. Deployment still depends on DNS control, the current hosting architecture and explicit tenant authorization.</span><span lang-ro>Orice site public al cărui trafic poate trece printr-un strat edge compatibil poate fi evaluat. Implementarea depinde de controlul DNS, arhitectura de hosting și autorizarea explicită a clientului.</span></div><span></span></div>
+    </details>
+    <details class="faq">
+      <summary><span class="q-num">Q.08</span><h3 style="font-size:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0;display:inline;"><span lang-en>How is an implementation verified?</span><span lang-ro>Cum este verificată implementarea?</span></h3><span class="q-toggle">+</span></summary>
+      <div class="q-body"><span class="mono" style="font-size:11px;color:var(--dim);letter-spacing:0.16em;text-transform:uppercase;">↳ A</span><div><span lang-en>3webobs performs an independent re-audit after deployment. The result records what was detected, what changed and which signals remain outside the injector's control.</span><span lang-ro>3webobs efectuează un reaudit independent după implementare. Rezultatul înregistrează ce a fost detectat, ce s-a schimbat și ce semnale rămân în afara controlului injectorului.</span></div><span></span></div>
+    </details>
+    <details class="faq">
+      <summary><span class="q-num">Q.09</span><h3 style="font-size:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0;display:inline;"><span lang-en>Can the injector be removed or rolled back?</span><span lang-ro>Injectorul poate fi eliminat sau readus la versiunea anterioară?</span></h3><span class="q-toggle">+</span></summary>
+      <div class="q-body"><span class="mono" style="font-size:11px;color:var(--dim);letter-spacing:0.16em;text-transform:uppercase;">↳ A</span><div><span lang-en>Yes. The customer retains control of the DNS and Cloudflare account. Removing or rolling back the edge worker returns delivery to the previous configuration.</span><span lang-ro>Da. Clientul păstrează controlul asupra DNS-ului și contului Cloudflare. Eliminarea sau revenirea la versiunea anterioară a workerului readuce livrarea la configurația precedentă.</span></div><span></span></div>
+    </details>
+    <details class="faq">
+      <summary><span class="q-num">Q.10</span><h3 style="font-size:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0;display:inline;"><span lang-en>Does the injector correct all 167 criteria audited by 3webobs?</span><span lang-ro>Injectorul corectează toate cele 167 de criterii auditate de 3webobs?</span></h3><span class="q-toggle">+</span></summary>
+      <div class="q-body"><span class="mono" style="font-size:11px;color:var(--dim);letter-spacing:0.16em;text-transform:uppercase;">↳ A</span><div><span lang-en>No. 3webobs audits 167 observable criteria. The injector maintains a 156-signal technical registry; third-party authority, reviews, backlinks, rankings and AI recommendations are monitored but cannot be injected.</span><span lang-ro>Nu. 3webobs auditează 167 de criterii observabile. Injectorul menține un registru tehnic de 156 de semnale; autoritatea terță, recenziile, backlinkurile, clasamentele și recomandările AI sunt monitorizate, dar nu pot fi injectate.</span></div><span></span></div>
     </details>
   </section>
 
