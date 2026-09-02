@@ -1,0 +1,106 @@
+{
+  "schema": "https://5thelement.ai/schemas/adn.v1.json",
+  "artifact_type": "ai-manifest",
+  "version": "1.0",
+  "generated": "2026-09-02",
+  "domain": "https://aireadyinjector.com",
+  "node_role": "product_node",
+  "belongs_to_network": "AiVenture ADI Network",
+  "root_domain": "https://5thelement.ai",
+  "entity": {
+    "@type": "Organization",
+    "legal_name": "AIVENTURE S.R.L.",
+    "brand": "5thelement.ai",
+    "product": "AI-READY INJECTOR",
+    "identifiers": {
+      "cui": "51415878",
+      "trade_register": "J2025016406000",
+      "euid": "ROONRC.J2025016406000"
+    },
+    "founded": "2025-03-07",
+    "address": {
+      "street": "Drumul Padurea Pustnicu 141C, Corp A, Etaj 2, Ap. 5",
+      "locality": "Bucuresti",
+      "region": "Sector 1",
+      "country": "RO"
+    },
+    "sameAs": [
+      "https://5thelement.ai",
+      "https://3webobs.com",
+      "https://aiventure.ro"
+    ]
+  },
+  "product": {
+    "name": "AI-READY INJECTOR",
+    "category": "AI Delivery Infrastructure (ADI)",
+    "summary": "Edge-delivered AI readability for existing websites. 156 verifiable signals injected in front of a site, without changing its CMS, then kept correct continuously.",
+    "delivery": "Cloudflare Worker deployed on the customer DNS, under an intervention agreement",
+    "pricing_source": "https://aireadyinjector.com/pricing.json"
+  },
+  "relations": {
+    "audited_by": "https://3webobs.com",
+    "architecture": "https://5thelement.ai",
+    "protocol_between": "A2A"
+  },
+  "capabilities": [
+    {
+      "id": "inject.signals",
+      "name": "Inject AI signals at the edge",
+      "input": "audit.json from 3webobs",
+      "output": "signal bundle served at the edge",
+      "status": "operational"
+    },
+    {
+      "id": "compile.dictionary",
+      "name": "Compile the business dictionary",
+      "input": "audit.json from 3webobs",
+      "output": "entities, services, intents, routes, proof",
+      "status": "in_development"
+    }
+  ],
+  "boundaries": {
+    "does_not_modify": [
+      "reviews",
+      "backlinks",
+      "third_party_publications",
+      "search_rankings"
+    ],
+    "does_not_claim": [
+      "eu_ai_act_compliance",
+      "certification",
+      "guaranteed_ai_citation"
+    ],
+    "scoring_owned_by": "https://3webobs.com"
+  },
+  "signal_registry": {
+    "total": 156,
+    "families": {
+      "ai_signals": 27,
+      "aeo": 33,
+      "geo": 28,
+      "aio": 26,
+      "seo": 42
+    },
+    "basis": "Aggregated on top of existing web standards. Not an official standard.",
+    "separate_registry": {
+      "name": "ADI Core",
+      "levels": "L0-L5",
+      "signals": 50,
+      "never_summed_with": 156
+    }
+  },
+  "endpoints": {
+    "entities": "/entities.json",
+    "intents": "/intents.json",
+    "pricing": "/pricing.json",
+    "agent_card": "/.well-known/agent.json",
+    "llms": "/llms.txt",
+    "sitemap": "/sitemap.xml",
+    "network": "/network.json"
+  },
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "contact": "contact@aireadyinjector.com"
+}

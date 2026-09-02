@@ -1,0 +1,69 @@
+{
+  "schema": "https://aireadyinjector.com/schemas/pricing.v1.json",
+  "version": "1.0",
+  "updated": "2026-09-02",
+  "currency": "EUR",
+  "vat_note": "Prices exclude VAT. AiVenture S.R.L. is a Romanian VAT-registered entity.",
+  "status_note": "PROPOSAL — not yet confirmed by AiVenture. Do not publish until confirmed.",
+  "entry": {
+    "id": "AUDIT-000",
+    "name": "AI readiness audit",
+    "price": 0,
+    "unit": "per report",
+    "availability": "InStock",
+    "provider": "3webobs.com",
+    "note": "3 free reports per domain per month, then 19 EUR per report. The audit is not sold here.",
+    "cta_url": "https://3webobs.com"
+  },
+  "plans": [
+    {
+      "id": "INJ-100",
+      "name": "Inject",
+      "price": 490,
+      "unit": "one-time setup, per domain",
+      "availability": "InStock",
+      "includes": [
+        "Edge worker deployed on your DNS, no CMS change",
+        "Signal bundle compiled from your audit: entities, services, intents, routes, proof",
+        "Automatic tier applied: metadata, JSON-LD, internal links, AI files, endpoints",
+        "Re-audit on 3webobs with before/after on record"
+      ]
+    },
+    {
+      "id": "INJ-200",
+      "name": "Maintain",
+      "price": 149,
+      "unit": "per month, per domain",
+      "availability": "InStock",
+      "includes": [
+        "Weekly re-audit and automatic correction of the automatic tier",
+        "Approval queue for commercial copy, prices, claims and policies",
+        "Monitoring for reviews, backlinks, third-party sources and positions",
+        "Full history with before/after, dates, evidence and rollback",
+        "Monthly one-page report: what changed, what is next"
+      ]
+    },
+    {
+      "id": "INJ-300",
+      "name": "Transact",
+      "price": 349,
+      "unit": "per month, per domain",
+      "availability": "PreOrder",
+      "includes": [
+        "Everything in Maintain",
+        "A2A agent card with declared skills, pricing and endpoints",
+        "Capability invocation for agents, with idempotency and rate limiting",
+        "ADI level tracking, L0 to L5, reported separately from the audit score"
+      ],
+      "note": "PreOrder until the secured API and prepaid credit ship."
+    }
+  ],
+  "enterprise": {
+    "id": "INJ-900",
+    "name": "Multi-domain and partner",
+    "price": null,
+    "unit": "on request",
+    "availability": "InStock",
+    "note": "For groups, agencies and professional firms deploying across a client portfolio."
+  }
+}

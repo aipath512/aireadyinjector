@@ -1,0 +1,230 @@
+{
+  "schema": "https://5thelement.ai/schemas/adn.v1.json",
+  "artifact_type": "network",
+  "version": "1.0",
+  "updated": "2026-09-02",
+  "operator": {
+    "legal_name": "AIVENTURE S.R.L.",
+    "brand": "5thelement.ai",
+    "cui": "51415878",
+    "euid": "ROONRC.J2025016406000",
+    "trade_register": "J2025016406000",
+    "founded": "2025-03-07",
+    "country": "RO"
+  },
+  "root_domain": "https://5thelement.ai",
+  "delivery_domain": "https://aiventure.ro",
+  "note": "Canonical list of the AiVenture ADI Network. This file is the single source for the network block rendered on every property. Update here, not in HTML.",
+  "nodes": [
+    {
+      "domain": "5thelement.ai",
+      "url": "https://5thelement.ai",
+      "role": "root",
+      "group": "core",
+      "status": "active",
+      "label_en": "AI discovery infrastructure",
+      "label_ro": "Infrastructură de descoperire AI"
+    },
+    {
+      "domain": "aiventure.ro",
+      "url": "https://aiventure.ro",
+      "role": "delivery",
+      "group": "core",
+      "status": "active",
+      "label_en": "Delivery domain, Romanian market",
+      "label_ro": "Domeniu de livrare, piața românească"
+    },
+    {
+      "domain": "aiventure.uk",
+      "url": "https://aiventure.uk",
+      "role": "delivery",
+      "group": "core",
+      "status": "active",
+      "label_en": "Delivery domain, UK market",
+      "label_ro": "Domeniu de livrare, piața UK"
+    },
+    {
+      "domain": "3webobs.com",
+      "url": "https://3webobs.com",
+      "role": "observation_node",
+      "group": "product",
+      "status": "active",
+      "label_en": "Audit engine, observer of the three webs",
+      "label_ro": "Motor de audit, observatorul celor trei web-uri"
+    },
+    {
+      "domain": "aireadyinjector.com",
+      "url": "https://aireadyinjector.com",
+      "role": "product_node",
+      "group": "product",
+      "status": "active",
+      "label_en": "Edge signal injection, the executor",
+      "label_ro": "Injecție de semnale la edge, executorul"
+    },
+    {
+      "domain": "ai-lens.eu",
+      "url": "https://ai-lens.eu",
+      "role": "product_node",
+      "group": "product",
+      "status": "under_repair",
+      "label_en": "Business dictionary — entities, services, credentials, proof",
+      "label_ro": "Dicționarul de business — entități, servicii, credențiale, dovezi"
+    },
+    {
+      "domain": "eu-ai-audit.eu",
+      "url": "https://eu-ai-audit.eu",
+      "role": "product_node",
+      "group": "product",
+      "status": "active",
+      "label_en": "AUDIT-AI engine",
+      "label_ro": "Motorul AUDIT-AI"
+    },
+    {
+      "domain": "eu-ai-act.ro",
+      "url": "https://eu-ai-act.ro",
+      "role": "compliance_node",
+      "group": "compliance",
+      "status": "active",
+      "label_en": "EU AI Act Ready, Romanian funnel",
+      "label_ro": "EU AI Act Ready, funnel românesc"
+    },
+    {
+      "domain": "eu-ai-act-ready.eu",
+      "url": "https://eu-ai-act-ready.eu",
+      "role": "compliance_node",
+      "group": "compliance",
+      "status": "active",
+      "label_en": "EU AI Act readiness, multilingual",
+      "label_ro": "Pregătire EU AI Act, multilingv"
+    },
+    {
+      "domain": "eu-ai-ready.eu",
+      "url": "https://eu-ai-ready.eu",
+      "role": "compliance_node",
+      "group": "compliance",
+      "status": "active",
+      "label_en": "AI readiness, EU",
+      "label_ro": "Pregătire AI, UE"
+    },
+    {
+      "domain": "eu-112.eu",
+      "url": "https://eu-112.eu",
+      "role": "compliance_node",
+      "group": "compliance",
+      "status": "active",
+      "label_en": "EU AI Act operational readiness",
+      "label_ro": "Pregătire operațională EU AI Act"
+    },
+    {
+      "domain": "eu-112.ro",
+      "url": "https://eu-112.ro",
+      "role": "compliance_node",
+      "group": "compliance",
+      "status": "active",
+      "label_en": "Operational readiness, Romanian market",
+      "label_ro": "Pregătire operațională, piața românească"
+    },
+    {
+      "domain": "b2b-ai-library.org",
+      "url": "https://b2b-ai-library.org",
+      "role": "resource_node",
+      "group": "resource",
+      "status": "active",
+      "label_en": "B2B AI resource library",
+      "label_ro": "Bibliotecă de resurse AI pentru B2B"
+    },
+    {
+      "domain": "ecbtax.com",
+      "url": "https://ecbtax.com",
+      "role": "client_business_node",
+      "group": "partner",
+      "status": "active",
+      "label_en": "ECB Tax Accounting & HR — strategic partner, accounting industry",
+      "label_ro": "ECB Tax Accounting & HR — partener strategic, industria contabilă",
+      "client_identity": {
+        "legal_name": "ECB TAX ACCOUNTING & HR SRL",
+        "cui": "35136588",
+        "euid": "ROONRC.J2015012724402"
+      },
+      "partnership": {
+        "declared_on": [
+          "https://ecbtax.com",
+          "https://aireadyinjector.com"
+        ],
+        "since": "2026",
+        "scope_en": "Accounting, payroll and tax advisory. First live reference account for edge signal injection.",
+        "scope_ro": "Contabilitate, salarizare și consultanță fiscală. Primul cont de referință live pentru injecția de semnale la edge."
+      }
+    }
+  ],
+  "innovations": [
+    {
+      "id": "WEBAI-B2B",
+      "name": "Web-AI B2B Network",
+      "sha256": "4d708888ebe4dfb79f36052f6c34735d4516f5501f5402126c300e76892ad5a6",
+      "en": "The network layer that connects business entities so AI systems can resolve them as one graph rather than unrelated sites.",
+      "ro": "Stratul de rețea care leagă entitățile de business ca sistemele AI să le rezolve ca un singur graf, nu ca site-uri fără legătură.",
+      "status": "operational"
+    },
+    {
+      "id": "MKT-INDIRECT",
+      "name": "B2B Indirect Marketing",
+      "sha256": "217881f60755e3701496b1cb8690d0fd807362f64f478618385ae23318387499",
+      "en": "Acquisition through being the source an AI system chooses to cite, instead of buying attention directly.",
+      "ro": "Achiziție prin a fi sursa pe care un sistem AI alege să o citeze, în loc să cumperi atenție direct.",
+      "status": "operational"
+    },
+    {
+      "id": "AI-TRUST",
+      "name": "AI-Trust Protocol",
+      "sha256": "2395f0b7bd8c3d319a555c0c8638544e343f26d38d1bde28de84d15516990b5e",
+      "en": "Identity, credentials and evidence declared so a machine can check them without asking a human.",
+      "ro": "Identitate, credențiale și dovezi declarate astfel încât o mașină să le verifice fără să întrebe un om.",
+      "status": "operational"
+    },
+    {
+      "id": "EDGE-INJECTOR",
+      "name": "1-Click Edge Injector",
+      "sha256": "697fe1310d5b453ac71c637a2d5af655221f4e0bbc1f3117c023fa9a0444f826",
+      "en": "Signals served in front of an existing site, with no CMS change and a clean removal path.",
+      "ro": "Semnale servite în fața unui site existent, fără modificarea CMS-ului și cu o cale curată de dezinstalare.",
+      "status": "operational"
+    },
+    {
+      "id": "ECONOMIC-TWINS",
+      "name": "B2B Economic Twins",
+      "sha256": "0716ca58759f65f4760259efe71e99eecf5d22d7471ce4ef7107b49a86c0a077",
+      "en": "Public fiscal registry data turned into a vector space, to find companies whose economic profile matches an existing client.",
+      "ro": "Date din registrul fiscal public transformate în spațiu vectorial, pentru a găsi firme cu profil economic asemănător unui client existent.",
+      "status": "in_development"
+    },
+    {
+      "id": "ADI",
+      "name": "AI Delivery Infrastructure",
+      "sha256": "31aa7a564ad93f21752e6c8d1b31f105688156182cfb1bcd6fb65ef1c756bc36",
+      "en": "Site is content, edge is signals. Decoupled, so the machine-readable layer is corrected without touching the site.",
+      "ro": "Site-ul e conținut, edge-ul e semnale. Decuplate, deci stratul citibil de mașini se corectează fără a atinge site-ul.",
+      "status": "operational"
+    }
+  ],
+  "proof": {
+    "registry": "Innovation registry, six canonical artefacts, each hashed with SHA-256",
+    "root_manifest_sha256": "82c79d0e82e678cdbc4f3d3990f73a7ac5f3452ca02706f99779ff2c8cd1df30",
+    "anchor": {
+      "method": "OpenTimestamps",
+      "chain": "Bitcoin",
+      "anchor_file": "ai-delivery-infrastructure_canonical_txt.ots"
+    },
+    "independent_review": {
+      "by": "Gemini architectural review",
+      "date": "2026",
+      "scope_en": "Structural review of the decoupled signalling architecture. A model review, not a certification and not an accreditation by any authority.",
+      "scope_ro": "Analiză structurală a arhitecturii de semnalizare decuplate. O analiză făcută de un model, nu o certificare și nu o acreditare de la vreo autoritate."
+    },
+    "verify_note_en": "Recompute the SHA-256 of the canonical artefact and check it against the OpenTimestamps attestation. Detected is not verified until you have done both yourself.",
+    "verify_note_ro": "Recalculează SHA-256 al artefactului canonic și verifică-l față de atestarea OpenTimestamps. Detectat nu înseamnă verificat până nu ai făcut ambele tu însuți."
+  },
+  "testimonials": [],
+  "testimonials_note": "EMPTY BY DESIGN. Nothing goes here until a named person at a named company has approved the exact wording in writing. No composites, no paraphrases, no illustrative quotes. The section does not render while this array is empty.",
+  "excluded_note": "1clic-ia.eu and 1clic-ia.fr are not listed while their DNS and crawler policy are unresolved. ai-lens.eu is listed as under_repair while its managed robots.txt blocks AI crawlers. A network block must never link to a node that contradicts the product."
+}

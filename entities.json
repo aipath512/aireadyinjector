@@ -1,0 +1,73 @@
+{
+  "schema": "https://5thelement.ai/schemas/ai-entities.v0.1.json",
+  "artifact_type": "entities",
+  "generated": "2026-09-02",
+  "target_domain": "https://aireadyinjector.com",
+  "status": "DECLARED",
+  "entities": [
+    {
+      "entity_id": "ORG_AIVENTURE",
+      "entity_type": "Organization",
+      "label": "AIVENTURE S.R.L.",
+      "confidence": 1.0,
+      "properties": {
+        "cui": "51415878",
+        "euid": "ROONRC.J2025016406000",
+        "trade_register": "J2025016406000",
+        "founded": "2025-03-07",
+        "country": "RO",
+        "brand": "5thelement.ai"
+      }
+    },
+    {
+      "entity_id": "PRODUCT_INJECTOR",
+      "entity_type": "Product",
+      "label": "AI-READY INJECTOR",
+      "confidence": 1.0,
+      "properties": { "category": "AI Delivery Infrastructure", "site": "https://aireadyinjector.com" }
+    },
+    {
+      "entity_id": "SERVICE_INJECT",
+      "entity_type": "Service",
+      "label": "Edge signal injection",
+      "confidence": 1.0,
+      "properties": { "plan_id": "INJ-100", "availability": "InStock" }
+    },
+    {
+      "entity_id": "SERVICE_MAINTAIN",
+      "entity_type": "Service",
+      "label": "Continuous audit and correction",
+      "confidence": 1.0,
+      "properties": { "plan_id": "INJ-200", "availability": "InStock" }
+    },
+    {
+      "entity_id": "SERVICE_TRANSACT",
+      "entity_type": "Service",
+      "label": "A2A agent readiness",
+      "confidence": 1.0,
+      "properties": { "plan_id": "INJ-300", "availability": "PreOrder" }
+    },
+    {
+      "entity_id": "ENGINE_3WEBOBS",
+      "entity_type": "Service",
+      "label": "3webobs audit engine",
+      "confidence": 1.0,
+      "properties": { "domain": "https://3webobs.com", "role": "observer_auditor" }
+    },
+    {
+      "entity_id": "ORG_ECBTAX",
+      "entity_type": "Organization",
+      "label": "ECB TAX ACCOUNTING & HR SRL",
+      "confidence": 1.0,
+      "properties": { "cui": "35136588", "domain": "https://ecbtax.com", "role": "strategic_partner_accounting" }
+    }
+  ],
+  "relationships": [
+    { "from": "ORG_AIVENTURE", "relation": "PRODUCES", "to": "PRODUCT_INJECTOR", "cardinality": "1:N" },
+    { "from": "PRODUCT_INJECTOR", "relation": "PROVIDES", "to": "SERVICE_INJECT", "cardinality": "1:N" },
+    { "from": "PRODUCT_INJECTOR", "relation": "PROVIDES", "to": "SERVICE_MAINTAIN", "cardinality": "1:N" },
+    { "from": "PRODUCT_INJECTOR", "relation": "PROVIDES", "to": "SERVICE_TRANSACT", "cardinality": "1:N" },
+    { "from": "PRODUCT_INJECTOR", "relation": "AUDITED_BY", "to": "ENGINE_3WEBOBS", "cardinality": "N:1" },
+    { "from": "ORG_AIVENTURE", "relation": "PARTNERS_WITH", "to": "ORG_ECBTAX", "cardinality": "N:N" }
+  ]
+}

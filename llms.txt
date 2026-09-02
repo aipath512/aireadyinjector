@@ -1,0 +1,70 @@
+# AI-READY INJECTOR
+
+> Edge-delivered AI readability for existing websites. Adds 156 verifiable
+> signals in front of a site without changing its CMS, then keeps them correct
+> as the site and the crawlers change.
+
+Operated by AiVenture S.R.L. (Bucharest, Romania), a product of 5thelement.ai.
+
+## What this is
+
+The injector is the execution half of a two-part system. 3webobs.com observes
+and audits; the injector executes. They talk over A2A. The observer never fixes
+what it measures, and the executor never grades its own work.
+
+Loop: detect (3webobs) - plan - inject (edge) - verify (3webobs) - history.
+
+## What it changes on a customer site
+
+Served at the edge, in front of the origin, with the CMS untouched:
+entity identity, service declarations, intent mapping, route classification,
+structured data (JSON-LD), crawler directives, proof endpoints, agent card.
+
+## What it does not do
+
+It does not modify reviews, backlinks, third-party publications or search
+rankings. Those are monitored and reported, never claimed as corrected.
+It supports EU AI Act readiness. It does not provide compliance or certification.
+It does not guarantee that any AI system will cite or recommend a customer.
+
+## Automation tiers
+
+- automatic: metadata, JSON-LD, internal links, AI files, endpoints, technical errors
+- with approval: commercial copy, prices, claims, policies, external publishing
+- monitored only: reviews, backlinks, third-party sources, positions, AI recommendations
+
+## Signal registry
+
+156 signals, grouped as AI Signals 27, AEO 33, GEO 28, AIO 26, SEO 42.
+Built on top of existing web standards, aggregated into a measurable framework.
+Not an official standard of W3C, Schema.org, Google or OpenAI.
+
+Agent readiness is tracked separately on the ADI scale, L0 to L5, with
+cumulative gates. The two registries measure different things and are never
+summed.
+
+## Pricing
+
+Read from https://aireadyinjector.com/pricing.json as the single source.
+The audit itself is not sold here; it is free on 3webobs.com, three reports
+per domain per month.
+
+## Entry point
+
+Customers start with the free audit at https://3webobs.com and come here to
+have the gaps closed and kept closed.
+
+## Endpoints
+
+- /ai.json
+- /entities.json
+- /intents.json
+- /pricing.json
+- /network.json
+- /.well-known/agent.json
+- /llms.txt
+- /sitemap.xml
+
+## Contact
+
+contact@aireadyinjector.com

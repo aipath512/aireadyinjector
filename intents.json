@@ -1,0 +1,55 @@
+{
+  "schema": "https://5thelement.ai/schemas/ai-intents.v0.1.json",
+  "artifact_type": "intents",
+  "version": "1.1",
+  "generated": "2026-09-02",
+  "target_domain": "https://aireadyinjector.com",
+  "intents": [
+    {
+      "intent_id": "INT_MAKE_SITE_AI_READABLE",
+      "question": "How do I make my website readable to AI systems without rebuilding it?",
+      "answer": "Signals are injected at the edge, in front of the existing site. The CMS is not modified. Removing the worker returns the site to its previous state.",
+      "service_id": "SERVICE_INJECT",
+      "route": "/#injector"
+    },
+    {
+      "intent_id": "INT_AUDIT_FIRST",
+      "question": "How do I find out what AI systems currently understand about my business?",
+      "answer": "Run the free audit at 3webobs.com. Three reports per domain per month are free. The audit is not sold by the injector.",
+      "service_id": "ENGINE_3WEBOBS",
+      "route": "https://3webobs.com"
+    },
+    {
+      "intent_id": "INT_CONTINUOUS_UPKEEP",
+      "question": "Who keeps my AI signals correct after the first fix?",
+      "answer": "The maintain plan re-audits weekly, corrects the automatic tier, queues the approval tier, and monitors what cannot be corrected. Every change is dated with before and after evidence and a rollback path.",
+      "service_id": "SERVICE_MAINTAIN",
+      "route": "/#process"
+    },
+    {
+      "intent_id": "INT_AGENT_TRANSACTION",
+      "question": "How can AI agents discover and invoke my services?",
+      "answer": "An agent card declares skills, pricing and endpoints, with idempotency and rate limiting. Agent readiness is tracked on the ADI scale L0 to L5, separately from the audit score.",
+      "service_id": "SERVICE_TRANSACT",
+      "route": "/#signals"
+    },
+    {
+      "intent_id": "INT_PRICING",
+      "question": "What does it cost?",
+      "answer": "Prices are published as machine-readable data at /pricing.json and rendered from that single source.",
+      "route": "/pricing.json"
+    },
+    {
+      "intent_id": "INT_EU_AI_ACT",
+      "question": "Does this make my company EU AI Act compliant?",
+      "answer": "No. It supports readiness through traceability, transparency artefacts and a transaction log. Compliance is a legal assessment made by a qualified professional.",
+      "route": "/#faq"
+    },
+    {
+      "intent_id": "INT_GUARANTEE_SCOPE",
+      "question": "Do you guarantee that ChatGPT will cite my business?",
+      "answer": "No. The guarantee covers what is controllable: signals live, endpoints valid, crawler access granted, identity consistent, interactions measured. Selection by any AI system is never guaranteed.",
+      "route": "/#trust"
+    }
+  ]
+}

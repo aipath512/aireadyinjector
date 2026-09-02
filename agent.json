@@ -1,0 +1,41 @@
+{
+  "schema_version": "a2a/1.0",
+  "name": "AI-READY INJECTOR",
+  "description": "Injects and maintains machine-readable signals at the edge for existing websites. Execution half of the 3webobs observer and injector executor pair.",
+  "provider": {
+    "organization": "AIVENTURE S.R.L.",
+    "url": "https://aireadyinjector.com",
+    "identifiers": { "cui": "51415878", "euid": "ROONRC.J2025016406000" }
+  },
+  "url": "https://aireadyinjector.com",
+  "documentation": "https://aireadyinjector.com/llms.txt",
+  "capabilities": { "streaming": false, "push_notifications": false },
+  "skills": [
+    {
+      "id": "inject.plan",
+      "name": "Build an injection plan",
+      "description": "Takes an audit report from 3webobs and returns the ordered set of corrections, each tagged with its automation tier.",
+      "input_modes": ["application/json"],
+      "output_modes": ["application/json"],
+      "status": "declared_not_operational",
+      "note": "Public endpoint ships with the secured API."
+    },
+    {
+      "id": "inject.apply",
+      "name": "Apply an injection plan",
+      "description": "Executes the automatic tier at the edge for a tenant domain. The approval tier is queued for human confirmation and never applied autonomously.",
+      "input_modes": ["application/json"],
+      "output_modes": ["application/json"],
+      "status": "declared_not_operational",
+      "requires": "tenant authorization",
+      "note": "Public endpoint ships with the secured API."
+    }
+  ],
+  "pricing": { "source": "https://aireadyinjector.com/pricing.json", "currency": "EUR" },
+  "boundaries": {
+    "scoring_owned_by": "https://3webobs.com",
+    "never_autonomous": ["commercial copy", "prices", "claims", "policies", "external publishing"],
+    "not_modifiable": ["reviews", "backlinks", "third_party_sources", "search_rankings"]
+  },
+  "contact": "contact@aireadyinjector.com"
+}
