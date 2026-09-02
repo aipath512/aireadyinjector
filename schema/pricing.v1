@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aireadyinjector.com/schemas/pricing.v1.json",
+  "title": "AI-READY INJECTOR pricing",
+  "type": "object",
+  "required": ["version", "currency", "publication_status", "entry", "plans"],
+  "properties": {
+    "version": { "type": "string" },
+    "updated": { "type": "string", "format": "date" },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "publication_status": { "enum": ["draft", "approved", "retired"] },
+    "approved_by": { "type": "string" },
+    "approved_at": { "type": "string", "format": "date" },
+    "entry": { "$ref": "#/$defs/offer" },
+    "plans": { "type": "array", "items": { "$ref": "#/$defs/offer" } },
+    "enterprise": { "$ref": "#/$defs/offer" }
+  },
+  "$defs": {
+    "offer": {
+      "type": "object",
+      "required": ["id", "name", "price", "unit", "availability"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": ["number", "null"], "minimum": 0 },
+        "unit": { "type": "string" },
+        "availability": { "enum": ["InStock", "PreOrder", "OutOfStock"] },
+        "includes": { "type": "array", "items": { "type": "string" } },
+        "note": { "type": "string" },
+        "cta_url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}
