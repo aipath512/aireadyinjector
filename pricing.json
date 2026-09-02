@@ -4,7 +4,9 @@
   "updated": "2026-09-02",
   "currency": "EUR",
   "vat_note": "Prices exclude VAT. AiVenture S.R.L. is a Romanian VAT-registered entity.",
-  "status_note": "PROPOSAL — not yet confirmed by AiVenture. Do not publish until confirmed.",
+  "publication_status": "approved",
+  "approved_by": "AIVENTURE S.R.L.",
+  "approved_at": "2026-09-02",
   "entry": {
     "id": "AUDIT-000",
     "name": "AI readiness audit",

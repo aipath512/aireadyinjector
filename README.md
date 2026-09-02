@@ -29,15 +29,18 @@ Build output directory: `/` (root). Then Custom domains → add
 
 - Signal count is **156** (27 · 33 · 28 · 26 · 42). Never 167.
 - ADI levels are **L0–L5**. Never L1–L6.
-- Prices live only in `pricing.json`. Currently marked `PROPOSAL` — confirm the
-  numbers before publishing.
+- Prices live only in `pricing.json`. The published Product offer and the
+  approved entry price in `pricing.json` must always match.
 - Scoring belongs to 3webobs. This site never scores anything.
 - "Readiness", never "compliant" or "certified".
 - Skills in the agent card are `declared_not_operational` until the secured API
   ships. Do not flip that flag before the endpoint exists.
 
-## Still missing
+## SEO and structured-data rules
 
-- `terms.html`, `privacy.html`, `cookies.html` — footer links currently 404.
-- OG image at `/assets/og.png`.
-- Cookie consent, if analytics are added.
+- Exactly one H1 per HTML page. H2 and H3 reflect real section nesting.
+- Breadcrumbs belong on internal pages only, never on `/` or `/ro/`.
+- FAQ text in JSON-LD must also be visible in the page.
+- Do not add reviews or aggregate ratings until genuine reviews are visible.
+- Cloudflare Pages uses `404.html` to prevent SPA-style soft 404 responses.
+- Cookie consent is required before adding non-essential analytics.
