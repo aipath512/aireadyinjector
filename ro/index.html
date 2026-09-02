@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
 <head>
 <meta charset="utf-8">
-<title>AI-READY INJECTOR™ — AI readability at the edge</title>
+<title>AI-READY INJECTOR™ — lizibilitate AI la edge</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="AI-READY INJECTOR adds 156 verifiable AI signals to any website at the edge. No CMS change, no rebuild. Audited by 3webobs, corrected continuously, with before and after on record.">
-<link rel="canonical" href="https://aireadyinjector.com/">
+<meta name="description" content="AI-READY INJECTOR adaugă 156 de semnale AI verificabile oricărui site, la edge. Fără modificarea CMS-ului, fără reconstrucție. Auditat de 3webobs, corectat continuu.">
+<link rel="canonical" href="https://aireadyinjector.com/ro/">
 <link rel="alternate" hreflang="en" href="https://aireadyinjector.com/">
 <link rel="alternate" hreflang="ro" href="https://aireadyinjector.com/ro/">
 <link rel="alternate" hreflang="x-default" href="https://aireadyinjector.com/">
@@ -14,21 +14,30 @@
 <meta name="generator" content="ADI Engine — AiVenture / 5thelement.ai">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI-READY INJECTOR">
-<meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="ro_RO">
-<meta property="og:url" content="https://aireadyinjector.com/">
-<meta property="og:title" content="AI-READY INJECTOR™ — AI readability at the edge">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://aireadyinjector.com/ro/">
+<meta property="og:title" content="AI-READY INJECTOR™ — lizibilitate AI la edge">
 <meta property="og:description" content="156 verifiable AI signals injected at the edge. No rebuild. Audited by 3webobs, corrected continuously.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/json" href="/ai.json" title="AI Manifest">
-<link rel="alternate" type="application/json" href="/intents.json" title="Intent Matrix">
-<link rel="author" href="/llms.txt">
-<link rel="sitemap" href="/sitemap.xml">
+<link rel="alternate" type="application/json" href="../ai.json" title="AI Manifest">
+<link rel="alternate" type="application/json" href="../intents.json" title="Intent Matrix">
+<link rel="author" href="../llms.txt">
+<link rel="sitemap" href="../sitemap.xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/ledger.css">
+<link rel="stylesheet" href="../assets/ledger.css">
+<style>
+[lang-en]{display:none}
+[lang-ro]{display:inline}
+[lang-ro].block{display:block}
+body:not(.lang-ro) [lang-en]{display:inline}
+body:not(.lang-ro) [lang-en].block{display:block}
+body:not(.lang-ro) [lang-ro]{display:none}
+</style>
+
 
 <script type="application/ld+json">
 {
@@ -115,7 +124,7 @@
 }
 </script>
 </head>
-<body>
+<body class="lang-ro">
 
 <!-- STATUS BAR -->
 <div class="status-bar" style="border-bottom:1px solid var(--dimmer); padding:10px 56px; font-family:var(--mono); font-size:11px; color:var(--dim); display:flex; justify-content:space-between; letter-spacing:0.02em; background:var(--ink);">
@@ -965,13 +974,13 @@
       <div>
         <div class="eyebrow-dim" style="margin-bottom:18px;">// <span lang-en>machine readable</span><span lang-ro>citibil de mașini</span></div>
         <ul style="list-style:none; padding:0; margin:0; display:grid; gap:12px; font-family:var(--mono); font-size:13px;">
-          <li><a href="/ai.json" style="color:var(--text); text-decoration:none;">/ai.json</a></li>
-          <li><a href="/entities.json" style="color:var(--text); text-decoration:none;">/entities.json</a></li>
-          <li><a href="/intents.json" style="color:var(--text); text-decoration:none;">/intents.json</a></li>
-          <li><a href="/pricing.json" style="color:var(--text); text-decoration:none;">/pricing.json</a></li>
-          <li><a href="/llms.txt" style="color:var(--text); text-decoration:none;">/llms.txt</a></li>
-          <li><a href="/network.json" style="color:var(--text); text-decoration:none;">/network.json</a></li>
-          <li><a href="/.well-known/agent.json" style="color:var(--text); text-decoration:none;">/.well-known/agent.json</a></li>
+          <li><a href="../ai.json" style="color:var(--text); text-decoration:none;">/ai.json</a></li>
+          <li><a href="../entities.json" style="color:var(--text); text-decoration:none;">/entities.json</a></li>
+          <li><a href="../intents.json" style="color:var(--text); text-decoration:none;">/intents.json</a></li>
+          <li><a href="../pricing.json" style="color:var(--text); text-decoration:none;">/pricing.json</a></li>
+          <li><a href="../llms.txt" style="color:var(--text); text-decoration:none;">/llms.txt</a></li>
+          <li><a href="../network.json" style="color:var(--text); text-decoration:none;">/network.json</a></li>
+          <li><a href="../.well-known/agent.json" style="color:var(--text); text-decoration:none;">/.well-known/agent.json</a></li>
         </ul>
       </div>
     </div>
@@ -1053,10 +1062,10 @@ function setLang(lang) {
 (function () {
   var saved = null;
   try { saved = localStorage.getItem('injector-lang'); } catch (e) {}
-  if (saved === 'ro') setLang('ro');
+  if (saved === 'en') { window.location.href='/'; } else { setLang('ro'); }
   document.querySelectorAll('.lang-switch').forEach(function (el) {
     el.addEventListener('click', function () {
-      setLang(document.body.classList.contains('lang-ro') ? 'en' : 'ro');
+      if (document.body.classList.contains('lang-ro')) { try { localStorage.setItem('injector-lang','en'); } catch(e){} window.location.href='/'; } else { setLang('ro'); }
     });
     el.addEventListener('keydown', function (ev) {
       if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); el.click(); }
@@ -1064,7 +1073,7 @@ function setLang(lang) {
   });
 })();
 
-fetch('/pricing.json').then(function (r) { return r.json(); }).then(function (d) {
+fetch('../pricing.json').then(function (r) { return r.json(); }).then(function (d) {
   var wrap = document.getElementById('plans');
   wrap.innerHTML = '';
   d.plans.forEach(function (p) {
@@ -1098,7 +1107,7 @@ fetch('/pricing.json').then(function (r) { return r.json(); }).then(function (d)
     '<div class="plan"><div class="mono" style="font-size:12px;color:var(--dim);">Pricing is temporarily unavailable. Email contact@aireadyinjector.com and we will send it.</div></div>';
 });
 
-fetch('/network.json').then(function (r) { return r.json(); }).then(function (n) {
+fetch('../network.json').then(function (r) { return r.json(); }).then(function (n) {
   var ro = function () { return document.body.classList.contains('lang-ro'); };
   var L = function (o) { return '<span lang-en>' + o.label_en + '</span><span lang-ro>' + o.label_ro + '</span>'; };
 
