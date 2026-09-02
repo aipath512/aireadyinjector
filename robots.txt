@@ -1,5 +1,15 @@
+Sitemap: https://aireadyinjector.com/sitemap.xml
+
 # aireadyinjector.com — AiVenture S.R.L.
 # A site selling AI readability must be readable. Crawlers are welcome.
+#
+# Machine-readable service information:
+# https://aireadyinjector.com/llms.txt
+# https://aireadyinjector.com/ai.json
+# https://aireadyinjector.com/network.json
+# https://aireadyinjector.com/.well-known/agent.json
+
+# ---------- OPENAI ----------
 
 User-agent: GPTBot
 Allow: /
@@ -10,31 +20,84 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+# ---------- ANTHROPIC ----------
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: anthropic-ai
+Allow: /
+
+# ---------- GOOGLE ----------
+
+User-agent: Googlebot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Googlebot
+# ---------- DEEPSEEK ----------
+
+User-agent: DeepSeekBot
 Allow: /
 
+User-agent: DeepSeek-User
+Allow: /
+
+User-agent: deepseek-ai
+Allow: /
+
+# ---------- PERPLEXITY ----------
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ---------- MICROSOFT / BING ----------
+
 User-agent: Bingbot
+Allow: /
+
+# ---------- APPLE ----------
+
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
+# ---------- OTHER AI CRAWLERS ----------
+
 User-agent: CCBot
 Allow: /
 
-User-agent: *
+User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://aireadyinjector.com/sitemap.xml
+User-agent: cohere-ai
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# ---------- ALL OTHER COMPLIANT CRAWLERS ----------
+
+User-agent: *
+Allow: /

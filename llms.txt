@@ -54,6 +54,13 @@ per domain per month.
 Customers start with the free audit at https://3webobs.com and come here to
 have the gaps closed and kept closed.
 
+## Crawler policy
+
+All major AI crawlers are explicitly allowed: GPTBot, OAI-SearchBot, ChatGPT-User,
+ClaudeBot, Claude-User, Claude-SearchBot, Googlebot, Google-Extended, DeepSeekBot,
+DeepSeek-User, PerplexityBot, Bingbot, Applebot, CCBot, meta-externalagent,
+cohere-ai, MistralAI-User, Amazonbot, YouBot. See /robots.txt.
+
 ## Endpoints
 
 - /ai.json
