@@ -1,46 +1,54 @@
-# aireadyinjector.com
+# AI-READY INJECTOR — Repo as Desk
+Repo: aipath512/aireadyinjector · Session: 0001C · v1.0 · 2026-09-04
 
-Product site for **AI-READY INJECTOR™**, a product of AiVenture S.R.L.
-(5thelement.ai). Static site, deployed from this repo to Cloudflare Pages.
+The repo is the desk. The files are the operating manual.
+`aireadyinjector.com` = product site + execution engine for AI-READY INJECTOR™.
 
-## Deploy
+---
 
-Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git →
-this repo. Framework preset: **None**. Build command: empty.
-Build output directory: `/` (root). Then Custom domains → add
-`aireadyinjector.com` and `www.aireadyinjector.com`.
+## START HERE, EVERY SESSION
 
-## Files
+1. `CLAUDE.md` — how to work. Non-negotiable rules. Read first.
+2. `ROADMAP.md` — what is being built this week. Nothing else gets built.
+3. `REVIEW.md` — the checklist before any push to `main`.
 
-| Path | What it is |
-|---|---|
-| `index.html` | The site, English. Romanian is available through the header toggle. |
-| `ro/index.html` | Romanian route, generated from `index.html`. Regenerate, don't hand-edit. |
-| `pricing.json` | **Single source of price.** Both pages render from it. No price in HTML. |
-| `robots.txt` | Explicit Allow for GPTBot, ClaudeBot, PerplexityBot, Google-Extended. |
-| `sitemap.xml` | Both language routes with hreflang. |
-| `llms.txt` | Plain-language summary for LLM context windows. |
-| `ai.json` | Entity manifest, capabilities, boundaries, registry counts. |
-| `entities.json` | Declared entity graph and relationships. |
-| `intents.json` | Question to answer mapping for agents and assistants. |
-| `.well-known/agent.json` | A2A agent card. Skills declared, marked not yet operational. |
+## MAP
 
-## Rules
+```
+/                       CLAUDE.md  ROADMAP.md  REVIEW.md  README.md
+                        signals.json  pricing.json        <- single sources, generated
+/app                    index.html, _worker.js, assets    <- the shipped site + engine
+/context   PRODUCT.md   what we sell, the three webs, the boundary
+           MARKET.md    who buys, why, where, in what order
+           OBJECTIONS.md what they say back, and the honest answer
+/specs     ENDPOINTS-L1-L6.md   canonical file/endpoint set per level
+           INJECTOR-ENGINE.md   KV model, worker behaviour, pipeline
+           SIGNALS-REGISTRY.md  signals.json contract, injectable flag
+           SITE-PAGES.md        page map + audit screen UI
+/customers _TEMPLATE.md  one file per client: state, path, level, history
+/demos     _TEMPLATE.md  one file per proof: before/after, timestamped
+/routines  DEPLOY.md  ONBOARD-CLIENT.md  WEEKLY.md
+```
 
-- Signal count is **156** (27 · 33 · 28 · 26 · 42). Never 167.
-- ADI levels are **L0–L5**. Never L1–L6.
-- Prices live only in `pricing.json`. The published Product offer and the
-  approved entry price in `pricing.json` must always match.
-- Scoring belongs to 3webobs. This site never scores anything.
-- "Readiness", never "compliant" or "certified".
-- Skills in the agent card are `declared_not_operational` until the secured API
-  ships. Do not flip that flag before the endpoint exists.
+## THE PRODUCT IN ONE PARAGRAPH
 
-## SEO and structured-data rules
+A business gives a URL. `3webobs.com` audits it independently across 167
+criteria in three webs — Human, AI, Machine (A2A). The injector takes only the
+missing, technical, controllable signals and publishes them at the Cloudflare
+Edge from KV, on the client's own hostname, without touching their site, CMS or
+theme. `3webobs.com` re-audits. The delta is shown. An hourly loop detects drift
+and re-injects. The client buys the loop staying on, not a report.
 
-- Exactly one H1 per HTML page. H2 and H3 reflect real section nesting.
-- Breadcrumbs belong on internal pages only, never on `/` or `/ro/`.
-- FAQ text in JSON-LD must also be visible in the page.
-- Do not add reviews or aggregate ratings until genuine reviews are visible.
-- Cloudflare Pages uses `404.html` to prevent SPA-style soft 404 responses.
-- Cookie consent is required before adding non-essential analytics.
+## THE FIVE RULES YOU WILL BREAK IF YOU SKIM
+
+1. 167 audited criteria ≠ 167 injectable signals. 140 testable. Far fewer injectable.
+2. The injector never verifies its own work. `3webobs` does, always.
+3. Untestable signals return `na`, never `fail 0`.
+4. Never promise citations, rankings, ChatGPT visibility, or legal compliance.
+5. Numbers come from `signals.json` and `pricing.json`. Never typed into copy.
+
+## STATUS
+
+Site: not deployed. Engine: not built. First target: `3webobs.com` as the
+demo injection, because it is our own domain and the before/after is verifiable
+by a stranger.
