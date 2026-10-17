@@ -34,11 +34,10 @@ export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
 
-  // Homepage only.
+  // A1 homepage and B2 internal HTML pages.
   if (
     request.method !== "GET" ||
-    url.hostname !== "aireadyinjector.com" ||
-    url.pathname !== "/"
+    url.hostname !== "aireadyinjector.com"
   ) {
     return next();
   }
@@ -48,6 +47,7 @@ export async function onRequest(context) {
     return next();
   }
 
+  const isHomepage = url.pathname === "/";
   let schema;
 
   try {
@@ -121,6 +121,33 @@ export async function onRequest(context) {
     html.includes(`${SITE}/#webpage`)
   ) {
     return response;
+  }
+
+  // B2: only inject on non-home HTML without existing JSON-LD.
+  if (!isHomepage) {
+    if (/<script\b[^>]*type\s*=\s*["']application\/ld\+json["']/i.test(html)) return response;
+    if (url.search) return response;
+    const canonicalTag = html.match(/<link\b[^>]*rel=["']canonical["'][^>]*>/i)?.[0];
+    const canonicalHref = canonicalTag?.match(/href=["']([^"']+)["']/i)?.[1];
+    if (!canonicalHref) return response;
+    const canonical = new URL(canonicalHref, SITE);
+    if (canonical.origin !== SITE || canonical.search) return response;
+    const pageUrl = canonical.origin + canonical.pathname;
+    const title = html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1]?.trim();
+    if (!title) return response;
+    schema = {
+      "@context": "https://schema.org",
+      "@graph": [
+        schema["@graph"].find(n => n["@id"] === "https://aiventure.ro/#organization"),
+        schema["@graph"].find(n => n["@id"] === SITE + "/#website"),
+        {
+          "@type": "WebPage", "@id": pageUrl + "#webpage",
+          "url": pageUrl, "name": title,
+          "isPartOf": {"@id": SITE + "/#website"},
+          "publisher": {"@id": "https://aiventure.ro/#organization"}
+        }
+      ]
+    };
   }
 
   const headers = new Headers(response.headers);
