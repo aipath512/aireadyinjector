@@ -34,11 +34,10 @@ export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
 
-  // Homepage only.
+  // A1 homepage and B2 internal HTML pages.
   if (
     request.method !== "GET" ||
-    url.hostname !== "aireadyinjector.com" ||
-    false /* B2 covers non-home pages */
+    url.hostname !== "aireadyinjector.com"
   ) {
     return next();
   }
@@ -130,7 +129,8 @@ export async function onRequest(context) {
     if (url.search) return response;
     const canonicalTag = html.match(/<link\b[^>]*rel=["']canonical["'][^>]*>/i)?.[0];
     const canonicalHref = canonicalTag?.match(/href=["']([^"']+)["']/i)?.[1];
-    const canonical = canonicalHref ? new URL(canonicalHref, SITE) : url;
+    if (!canonicalHref) return response;
+    const canonical = new URL(canonicalHref, SITE);
     if (canonical.origin !== SITE || canonical.search) return response;
     const pageUrl = canonical.origin + canonical.pathname;
     const title = html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1]?.trim();
