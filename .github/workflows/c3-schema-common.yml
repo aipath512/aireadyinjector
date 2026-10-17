@@ -1,0 +1,21 @@
+name: C3 Schema.org COMMON audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 6 * * *'
+permissions:
+  contents: read
+jobs:
+  c3-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit live HTML pages
+        run: python3 scripts/audit_schema_common_c3.py --output c3-schema-audit.json
+      - name: Upload evidence (even on failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c3-schema-common-report
+          path: c3-schema-audit.json
+          if-no-files-found: warn
