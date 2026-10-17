@@ -48,10 +48,7 @@ const metaTags = (html, cfg) => {
       '<meta\\b(?=[^>]*\\b' +
       attr +
       '\\s*=\\s*["\\x27]' +
-      name.replace(
-        /[.*+?^$\{\}()|[\]\\]/g,
-        "\\$&"
-      ) +
+      name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
       '["\\x27])[^>]*>',
       "i"
     );
@@ -83,11 +80,8 @@ const metaTags = (html, cfg) => {
   }
 
   add("name", "viewport", m.html_core?.viewport);
-
   add("name", "robots", m.seo?.robots_default);
-
   add("name", "description", m.seo?.description);
-
   add("name", "author", m.identity?.author);
 
   for (const [k, v] of Object.entries(m.open_graph || {})) {
@@ -165,8 +159,10 @@ class HeadInjector {
       );
     }
 
-    for (const tag of this.tags) {
-      element.append(tag, { html: true });
+    // META FAMILY at the beginning of <head>.
+    // Reverse order preserves the original tag order.
+    for (const tag of [...this.tags].reverse()) {
+      element.prepend(tag, { html: true });
     }
   }
 }
