@@ -321,7 +321,7 @@ export async function onRequest(context) {
 
   let tags = [];
 
-  if (isHomepage && !url.search) {
+  if (isHomepage) {
     try {
       const values = await Promise.all(
         HEAD_KEYS.map(
