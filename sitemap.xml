@@ -17,4 +17,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aireadyinjector.com/"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://aireadyinjector.com/ro/"/>
   </url>
+  <url>
+    <loc>https://aireadyinjector.com/legal/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
