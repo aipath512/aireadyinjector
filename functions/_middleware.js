@@ -199,7 +199,7 @@ async function onRequestOriginal(context) {
       ids.length !== 3 ||
       new Set(ids).size !== 3 ||
       ![
-        "https://aiventure.ro/#organization",
+        "https://5thelement.ai/#organization",
         SITE + "/#website",
         SITE + "/#webpage"
       ].every(id => ids.includes(id))
@@ -293,7 +293,7 @@ async function onRequestOriginal(context) {
             original["@graph"].find(
               n =>
                 n["@id"] ===
-                "https://aiventure.ro/#organization"
+                "https://5thelement.ai/#organization"
             ),
             original["@graph"].find(
               n =>
@@ -310,7 +310,7 @@ async function onRequestOriginal(context) {
               },
               "publisher": {
                 "@id":
-                  "https://aiventure.ro/#organization"
+                  "https://5thelement.ai/#organization"
               }
             }
           ]
@@ -357,7 +357,7 @@ async function onRequestOriginal(context) {
           graph.length === 3 &&
           new Set(ids).size === 3 &&
           [
-            "https://aiventure.ro/#organization",
+            "https://5thelement.ai/#organization",
             SITE + "/#website",
             SITE + "/#webpage"
           ].every(

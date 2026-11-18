@@ -11,7 +11,7 @@ import urllib.parse
 import urllib.request
 
 BASE = "https://aireadyinjector.com"
-ORG = "https://aiventure.ro/#organization"
+ORG = "https://5thelement.ai/#organization"
 SITE = BASE + "/#website"
 MAX_PAGES = 150
 
